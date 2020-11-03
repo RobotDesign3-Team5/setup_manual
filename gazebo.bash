@@ -72,4 +72,28 @@ if [ -d "/home/$USERNAME/.gazebo/models" ]; then
         echo "スティックのりモデル リポジトリをクローンします"
         git clone https://github.com/RobotDesign3-Team5/GlueStick_model.git
     fi
+    
+    echo -n -e "\n"
+
+    if [ -d "/home/$USERNAME/.gazebo/models/eraser_model" ]; then
+        cd /home/$USERNAME/.gazebo/models/eraser_model
+        echo "消しゴムモデル リポジトリを更新します"
+        git pull
+    else
+        cd /home/$USERNAME/.gazebo/models
+        echo "消しゴムモデル リポジトリをクローンします"
+        git clone https://github.com/MasatoKubotera/eraser_model.git
+    fi
+    
+    echo -n -e "\n"
+
+    if [ -d "/home/$USERNAME/.gazebo/models/battery_model" ]; then
+        cd /home/$USERNAME/.gazebo/models/battery_model
+        echo "電池モデル リポジトリを更新します"
+        git pull
+    else
+        cd /home/$USERNAME/.gazebo/models
+        echo "電池モデル リポジトリをクローンします"
+        git clone https://github.com/MasatoKubotera/battery_model.git
+    fi
 fi

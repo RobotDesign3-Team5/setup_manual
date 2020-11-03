@@ -29,6 +29,8 @@ Team5 セットアップマニュアル
       $ git clone https://github.com/RobotDesign3-Team5/sealmat_model.git
       $ git clone https://github.com/RobotDesign3-Team5/TissuePaper_model.git
       $ git clone https://github.com/RobotDesign3-Team5/GlueStick_model.git
+      $ git clone https://github.com/MasatoKubotera/eraser_model.git
+      $ git clone https://github.com/MasatoKubotera/battery_model.git
       ```
     - #### 方法② - bash
       下記の方法でbashを実行してください．
