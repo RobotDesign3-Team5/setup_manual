@@ -82,7 +82,7 @@ if [ -d "/home/$USERNAME/.gazebo/models" ]; then
     else
         cd /home/$USERNAME/.gazebo/models
         echo "消しゴムモデル リポジトリをクローンします"
-        git clone https://github.com/MasatoKubotera/eraser_model.git
+        git clone https://github.com/RobotDesign3-Team5/eraser_model.git
     fi
     
     echo -n -e "\n"
@@ -94,6 +94,6 @@ if [ -d "/home/$USERNAME/.gazebo/models" ]; then
     else
         cd /home/$USERNAME/.gazebo/models
         echo "電池モデル リポジトリをクローンします"
-        git clone https://github.com/MasatoKubotera/battery_model.git
+        git clone https://github.com/RobotDesign3-Team5/battery_model.git
     fi
 fi
