@@ -10,13 +10,21 @@ Team5 セットアップマニュアル
   $ rosdep install -r -y --from-paths --ignore-src crane_x7_ros
 ```
 
-
 ---
 ## 実機を使う場合
 - ### モデルの配置
   実機で動作確認を行う場合，以下の図のようにモデルを配置してください．
-![配置図完成](https://user-images.githubusercontent.com/53966271/98900657-90ceee00-24f5-11eb-842a-0d17a6daa277.jpg)
-<img src="https://user-images.githubusercontent.com/53966390/98886454-77b74480-24d7-11eb-9144-1a447d2191e7.png" width="640px">
+  <img src="https://user-images.githubusercontent.com/53966271/98900657-90ceee00-24f5-11eb-842a-0d17a6daa277.jpg" width="640px">
+  <img src="https://user-images.githubusercontent.com/53966390/98886454-77b74480-24d7-11eb-9144-1a447d2191e7.png" width="640px">
+- ### 実機の動かし方
+  - CRANE-X7をUSB接続し，下記のコマンドでアクセス権を変更してください．
+    ``` 
+    $ sudo chmod 666 /dev/ttyUSB0
+    ```
+  - 動作確認をする場合は下記のコマンドを実行してから，プログラムを実行してください．
+    ```
+    $ roslaunch crane_x7_bringup demo.launch fake_execution:=false
+    ```
 
 ---
 ## gazeboを使用する場合
@@ -66,6 +74,7 @@ Team5 セットアップマニュアル
 
   - ### 保存ディレクトリ
     `~/catkin_ws/src/crane_x7_ros/crane_x7_examples/scripts`
+  
     上記ディレクトリ内の **robotdesign3_team5.py** がプログラムコードになります.
 
 ---
