@@ -15,6 +15,8 @@ Team5 セットアップマニュアル
 ## 実機を使う場合
 - ### モデルの配置
   実機で動作確認を行う場合，以下の図のようにモデルを配置してください．
+![配置図完成](https://user-images.githubusercontent.com/53966271/98900657-90ceee00-24f5-11eb-842a-0d17a6daa277.jpg)
+<img src="https://user-images.githubusercontent.com/53966390/98886454-77b74480-24d7-11eb-9144-1a447d2191e7.png" width="640px">
 
 ---
 ## gazeboを使用する場合
